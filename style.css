@@ -1,0 +1,107 @@
+/* Базовые настройки */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #0f172a, #1e293b);
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #38bdf8;
+}
+
+p {
+  margin-top: 5px;
+  color: #94a3b8;
+}
+
+/* Секция формы */
+.form-section {
+  background: #1e293b;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #60a5fa;
+}
+
+select, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+  min-height: 80px;
+}
+
+button {
+  background-color: #2563eb;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+#status {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #34d399;
+}
+
+/* История тикетов */
+.history-section {
+  margin: 20px;
+}
+
+.ticket-card {
+  background-color: #334155;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.ticket-card h3 {
+  margin: 0;
+  color: #38bdf8;
+}
+
+.ticket-card p {
+  margin: 5px 0 0 0;
+  color: #cbd5e1;
+}
+
+.ticket-card .status {
+  margin-top: 5px;
+  font-weight: bold;
+  color: #facc15;
+}

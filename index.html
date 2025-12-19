@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Liteex Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+  <header>
+    <h1>?? Liteex Support</h1>
+    <p>Создай тикет и получи поддержку</p>
+  </header>
+
+  <section class="form-section">
+    <label>Категория тикета</label>
+    <select id="category">
+      <option value="Баг">?? Баг</option>
+      <option value="Вопрос">? Вопрос</option>
+      <option value="Идея">?? Идея</option>
+      <option value="Жалоба">?? Жалоба</option>
+    </select>
+
+    <label>Опиши проблему</label>
+    <textarea id="text" placeholder="Напиши тут свою проблему..."></textarea>
+
+    <button onclick="sendTicket()">Отправить тикет</button>
+    <p id="status"></p>
+  </section>
+
+  <section class="history-section">
+    <h2>?? История тикетов</h2>
+    <div id="ticketsList"></div>
+  </section>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
