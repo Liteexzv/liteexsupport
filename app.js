@@ -1,7 +1,8 @@
+// Telegram WebApp API
 const tg = window.Telegram.WebApp;
 tg.expand();
 
-// Массив тикетов (для демо)
+// Локальная история тикетов (для красоты)
 let tickets = [];
 
 function sendTicket() {
@@ -19,7 +20,7 @@ function sendTicket() {
     text: text
   }));
 
-  // Добавляем в локальную историю (чтобы было красиво)
+  // Добавляем в локальную историю
   const ticketId = tickets.length + 1;
   tickets.unshift({
     id: ticketId,
@@ -34,7 +35,7 @@ function sendTicket() {
   document.getElementById("text").value = "";
 }
 
-// Функция рендера карточек тикетов
+// Функция отображения тикетов
 function renderTickets() {
   const container = document.getElementById("ticketsList");
   container.innerHTML = "";
